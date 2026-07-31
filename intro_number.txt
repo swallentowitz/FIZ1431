@@ -1,0 +1,4 @@
+shell> cc -o number.bin intro_number.c [RETURN]
+shell> ./number.bin [RETURN]
+shell> 1.2 = 1.19999999999999995559
+shell> 
