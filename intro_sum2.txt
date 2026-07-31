@@ -1,4 +1,0 @@
-shell> cc -o sum2.bin intro_sum2.c [RETURN]
-shell> ./sum2.bin [RETURN]
-shell> x = 1.00000024
-shell> 
