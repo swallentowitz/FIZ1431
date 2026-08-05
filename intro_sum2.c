@@ -1,4 +1,10 @@
-/*! intro_sum2.c */
+/* intro_sum2.c
+   
+   Copyright (c) 2026 Sascha Wallentowitz
+   
+   Permission is granted under the MIT License.
+   See the LICENSE file for details.
+*/
 
 #include <stdio.h>
 
@@ -6,7 +12,6 @@ int main (void)
 {
   float x;
 
-  /* First small then large stuff. */
   x = 5.0e-8;
   x += 5.0e-8;
   x += 5.0e-8;

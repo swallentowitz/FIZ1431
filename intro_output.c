@@ -1,4 +1,11 @@
-/* intro_output.c */
+/* intro_output.c 
+  
+   Copyright (c) 2026 Sascha Wallentowitz
+   
+   Permission is granted under the MIT License.
+   See the LICENSE file for details.
+*/
+
 #include <stdio.h>
 #include <math.h>
 

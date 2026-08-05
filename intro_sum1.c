@@ -1,4 +1,11 @@
-/* intro_sum1.c */
+/* intro_sum1.c
+   
+   Copyright (c) 2026 Sascha Wallentowitz
+   
+   Permission is granted under the MIT License.
+   See the LICENSE file for details.
+*/
+
 
 #include <stdio.h>
 

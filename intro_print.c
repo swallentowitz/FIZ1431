@@ -1,4 +1,12 @@
-/*! \file intro_print.c */
+/* intro_print.c
+  
+   Copyright (c) 2026 Sascha Wallentowitz
+   
+   Permission is granted under the MIT License.
+   See the LICENSE file for details.
+*/
+
+
 #include <stdio.h>
 
 int main(void)
