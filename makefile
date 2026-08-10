@@ -25,8 +25,8 @@ lgmain: sf_log_gamma.o main_sf_log_gamma.o
 lgmain-install: lgmain
 	install lgmain.bin $(BINDIR)
 
-pmain: sf_log_gamma.o sf_poisson.o poisson_main.o
-	$(CC) $(CFLAGS) -o pmain.bin sf_log_gamma.o sf_poisson.o poisson_main.o $(LDFLAGS)
+pmain: sf_log_gamma.o sf_poisson.o main_sf_poisson.o
+	$(CC) $(CFLAGS) -o pmain.bin sf_log_gamma.o sf_poisson.o main_sf_poisson.o $(LDFLAGS)
 
 pmain-install: pmain
 	install pmain.bin $(BINDIR)
