@@ -18,15 +18,16 @@
 complex double wavefunction(double x, complex double* psi, size_t sz)
 {
   complex double y_old, y, y_new;
+  size_t n = sz;
   
-  y_old = 0.0 + 0.0i;
-  y = 0.0 + 0.0i;
+  y_old = CMPLX(0.0, 0.0);
+  y = CMPLX(0.0, 0.0);
   do {
     y_new = x * sqrt(2.0 / sz) * y - sqrt(1.0-1.0/(sz+1.0)) * y_old 
-            + psi[--sz];
+      + psi[--n];
     y_old = y; 
     y = y_new;
-  } while (sz > 0);
+  } while (n > 0);
   return y * exp(-0.5 * (x * x + LN_SQRT_PI));
 }
 
