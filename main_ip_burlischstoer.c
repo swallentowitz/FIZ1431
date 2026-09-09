@@ -1,4 +1,4 @@
-/* de_solve.c 
+/* main_ip_burlischstoer.c 
    
    Copyright (c) 2026 Sascha Wallentowitz
    
