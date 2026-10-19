@@ -139,7 +139,6 @@ igipmain: ig_romberg.o ig_improper.o main_ig_improper.o
 igipmain-install: igipmain
 	install igipmain.bin $(BINDIR)
 
-
 ftmain: ft_bitrev.o ft_fft.o main_ft_fft.o
 	$(CC) $(CFLAGS) -o ftmain.bin ft_bitrev.o ft_fft.o main_ft_fft.o $(LDFLAGS)
 
@@ -223,6 +222,24 @@ qtmain: de_rkembedded.o de_solve.o qt_solve.o main_qt_oscidamped.o sf_log_gamma.
 
 qtmain-install: qtmain
 	install qtmain.bin $(BINDIR)
+
+rnnormmain: rn_parkmiller.o rn_shuffle.o rn_normal.o main_rn_normal.o
+	$(CC) $(CFLAGS) -o rnnormmain.bin rn_parkmiller.o rn_shuffle.o rn_normal.o main_rn_normal.o $(LDFLAGS)
+
+rnnormmain-install: rnnormmain
+	install rnnormmain.bin $(BINDIR)
+
+mcsimplemain: rn_parkmiller.o rn_shuffle.o main_mc_simple.o
+	$(CC) $(CFLAGS) -o mcsimplemain.bin rn_parkmiller.o rn_shuffle.o main_mc_simple.o $(LDFLAGS)
+
+mcsimplemain-install: mcsimplemain
+	install mcsimplemain.bin $(BINDIR)
+
+mcimportancemain: rn_parkmiller.o rn_shuffle.o rn_normal.o main_mc_importance.o
+	$(CC) $(CFLAGS) -o mcimportancemain.bin rn_parkmiller.o rn_shuffle.o rn_normal.o main_mc_importance.o $(LDFLAGS)
+
+mcimportancemain-install: mcimportancemain
+	install mcimportancemain.bin $(BINDIR)
 
 doc:
 	doxygen
