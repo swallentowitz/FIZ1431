@@ -241,6 +241,12 @@ mcimportancemain: rn_parkmiller.o rn_shuffle.o rn_normal.o main_mc_importance.o
 mcimportancemain-install: mcimportancemain
 	install mcimportancemain.bin $(BINDIR)
 
+splitstep: ft_fft.o ft_bitrev.o ft_step.o main_splitstep.o
+	$(CC) $(CFLAGS) -o splitstep.bin ft_fft.o ft_bitrev.o ft_step.o main_splitstep.o $(LDFLAGS)
+
+splitstep-install: splitstep
+	install splitstep.bin $(BINDIR)
+
 doc:
 	doxygen
 
