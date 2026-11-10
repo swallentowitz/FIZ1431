@@ -247,6 +247,18 @@ splitstep: ft_fft.o ft_bitrev.o ft_step.o main_splitstep.o
 splitstep-install: splitstep
 	install splitstep.bin $(BINDIR)
 
+pthread1: pthread1.o
+	$(CC) $(CFLAGS) -o pthread1.bin pthread1.o $(LDFLAGS)
+
+pthread1-install: pthread1
+	install pthread1.bin $(BINDIR)
+
+pthread2: pthread2.o
+	$(CC) $(CFLAGS) -o pthread2.bin pthread2.o $(LDFLAGS)
+
+pthread2-install: pthread2
+	install pthread2.bin $(BINDIR)
+
 doc:
 	doxygen
 
